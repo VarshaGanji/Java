@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float n = scanner.nextFloat();
+        int integerPart = (int)n;
+        double highestRoundOff = Math.ceil(n);
+        double lowestRoundOff = Math.floor(n);
+        System.out.println(integerPart);
+        System.out.println(highestRoundOff);
+        System.out.println(lowestRoundOff);
+        scanner.close();
+       
+    }
+}
