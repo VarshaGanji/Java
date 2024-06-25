@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+        int Gold_cap = scanner.nextInt();
+        int BenS = scanner.nextInt();
+        int BBS = scanner.nextInt();
+        int Bens_gold = Gold_cap * BenS / 100;
+        Gold_cap = Gold_cap - Bens_gold;
+        int BB_Gold = Gold_cap * BBS / 100;
+        Gold_cap = Gold_cap - BB_Gold;
+        int P_Gold = Gold_cap / 3;
+        System.out.println(Bens_gold);
+        System.out.println(BB_Gold);
+        System.out.println(P_Gold);
+        
+        scanner.close();
+    }
+}
+    
